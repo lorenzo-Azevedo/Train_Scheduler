@@ -9,6 +9,8 @@ var config = {
 
   firebase.initializeApp(config);
 
+  var trainData = firebase.database();
+
 $('#addNew').on('click', function() {
 	var trainName = $('#trainNameInput').val();
 	var destination = $('#destinationInput').val();
